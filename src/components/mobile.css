@@ -1,0 +1,389 @@
+@media (max-width: 1600px) {
+    .containerTudo {
+        margin-top: 5% !important;
+        margin:0 auto;
+        width: 870px;
+        height: 475px;
+    }
+    
+}
+@media (max-width: 1282px) {
+    body { overflow-x: hidden }
+    .containerTudo {
+        margin-top: 5% !important;;
+        margin:0 auto;
+        width: 870px;
+        height: 475px;
+    }
+    
+}
+
+@media (max-width: 859px) {
+    body { overflow-x: hidden }
+
+    .containerTudo {
+        margin-top: 5% !important;;
+        margin:0 auto;
+        width: initial;
+        height: initial;
+    }
+
+    .loadingLogo{
+        position: absolute;
+        width: 95%;
+        margin-top: 4% !important;
+        margin-right: 10px;
+        padding: 10px;
+    }
+
+    .resultadoBloco{
+        position: relative;
+        float: left !important;
+       
+    }
+
+    .talaoBloco{
+        position: relative;
+        float: left !important;
+        z-index: 1;
+        
+    }
+
+}
+
+@media (max-width: 850px) {
+    body { 
+        overflow-x: hidden;
+        background-image: url('./imagens/FundoMobile.jpg');
+    }
+
+    .talao {
+        height: 450px;
+    }
+
+    .containerTudo {
+        margin-top: 5% !important;
+        margin:0 auto;
+        width: initial;
+        height: initial;
+        position: relative;
+    }
+
+    .loadingLogo{
+        position: absolute;
+        width: 95%;
+        margin-top: 6%;
+        margin: 10px;
+        margin-right: 10px;
+        padding: 10px;
+    }
+
+    .resultadoBloco{
+        position: absolute;
+        margin: 10px;
+        margin-right: 10px;
+        margin-top: 4%;
+        text-align: center;
+        width: 95%;
+        padding: 10px;
+    }
+
+    .talaoBloco{
+        position: absolute;
+        z-index: 1;
+        margin-top: 500px;
+        left: 50%;
+        transform: translate(-50%);
+        align-items: center;
+        
+    }
+
+    .observacao {
+        color: rgb(175, 175, 175);
+        width: 95%;
+        text-align: center;
+        height: fit-content;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        margin-left: 4%;
+    }
+
+    .talaoBloco{
+        position: absolute;
+        float: left !important;
+        z-index: 1;
+        top: 70px;
+    }
+
+    .resultadoBloco{
+      margin-top: 80px;
+      margin-left: 2%;
+    }
+
+    .loadingLogo{
+        top: 50px;
+        width: 95%;
+        margin-right: 2%;
+        margin-left: 2.1%;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    body {
+        background-image: url('./imagens/FundoMobile.jpg');
+    }
+
+    .talao {
+        height: 450px;
+    }
+
+    .resultadoBolas{
+        font-size: 19px;
+    }
+
+    .loadingLogo{
+        width: 93%;
+        margin-top: 6%;
+        margin: 10px;
+        margin-right: 50px !important;
+        padding: 10px;
+    }
+
+    .resultadoBloco{
+        position: absolute;
+        margin-top: 4%;
+        text-align: center;
+        width: 99%;
+        padding: 10px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .resultadoBolas{
+        font-size: 17px;
+        margin-left: 0.2%;
+        margin-right: 1%;
+    }
+
+    .bolaGrande {
+        margin-right: 5px;
+    }
+
+    .valorProxSorteio {
+        font-size: 39px;
+    }
+
+    .observacao {
+        color: rgb(175, 175, 175);
+        width: 95%;
+        text-align: center;
+        height: fit-content;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        margin-left: 4%;
+    }
+
+    .talaoBloco{
+        position: absolute;
+        float: left !important;
+        z-index: 1;
+        top: 80px;
+    }
+
+    .resultadoBloco{
+      margin-top: 100px;
+    }
+
+    .loadingLogo{
+        top: 89px;
+        width: 99%;
+        margin-right: 2%;
+        margin-left: 0.5%;
+    }
+}
+
+@media (max-width: 385px) {
+    body {
+        padding-left: 1.5px;
+        background-image: url('./imagens/FundoMobile.jpg');
+    }
+
+    .resultadoTitulo{
+        margin-top: 7px;
+        font-size: 35px;
+    }
+
+    .resultadoData {
+        font-size: 26px;
+    }
+
+    .talao {
+        height: 450px;
+    }
+
+    .resultadoTitulo{
+        font-size: 39px;
+    }
+
+    .resultadoData {
+        font-size: 27px;
+    }
+
+    .resultadoBolas{
+        font-size: 17px;
+        margin-left: 0.2%;
+        margin-right: 1%;
+    }
+
+    .bolaGrande {
+        margin-right: 5px;
+    }
+
+    .valorProxSorteio {
+        font-size: 37px;
+    }
+
+    .talaoBloco{
+        left: 52%;
+        
+    }
+
+    
+}
+
+@media (max-width: 365px) {
+
+    body {
+        background-image: url('./imagens/FundoMobile.jpg');
+        background-repeat: repeat;
+    }
+
+    .talao {
+        height: 450px;
+    }
+
+    .resultadoTitulo{
+        font-size: 33px;
+    }
+    
+    .resultadoData {
+        font-size: 26px;
+        z-index: 1;
+        position: relative;
+    }
+
+    .resultadoBolas{
+        font-size: 16px;
+        margin-left: 0.2%;
+        margin-right: 1%;
+    }
+
+    .bolaGrande {
+        margin-right: 3px;
+    }
+
+    .valorProxSorteio {
+        font-size: 36px;
+    }
+
+    .observacao {
+        color: rgb(175, 175, 175);
+        width: 95%;
+        text-align: center;
+        height: fit-content;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        margin-left: 4%;
+    }
+
+    .talaoBloco{
+        position: absolute;
+        float: left !important;
+        z-index: 1;
+        top: 80px;
+    }
+
+    .resultadoBloco{
+      margin-top: 100px;
+    }
+
+    .loadingLogo{
+        top: 89px;
+        width: 99%;
+        margin-right: 2%;
+        margin-left: 0.5%;
+    }
+}
+
+@media (max-width: 321px) {
+  
+    .resultadoTitulo{
+        margin-top: 7px;
+        font-size: 29px;
+    }
+
+    .resultadoData {
+        font-size: 22px;
+    }
+
+    .resultadoBolas{
+        font-size: 17px;
+    }
+
+    .bolaPequena {
+        padding: 5px 8px;
+    }
+
+    .bolaGrande {
+        margin-right: 3px;
+    }
+
+    .valorProxSorteio {
+        font-size: 25px;
+    }
+
+    .talaoBloco{
+        left: 52%;  
+    }
+
+    .valorProxSorteio {
+        font-size: 35px;
+    }
+
+    .observacao {
+        color: rgb(175, 175, 175);
+        width: 95%;
+        text-align: center;
+        height: fit-content;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        margin-left: 4%;
+    }
+
+    .talaoBloco{
+        position: absolute;
+        float: left !important;
+        z-index: 1;
+        top: 80px;
+    }
+
+    .resultadoBloco{
+      margin-top: 100px;
+    }
+
+    .loadingLogo{
+        top: 89px;
+        width: 99%;
+        margin-right: 2%;
+        margin-left: 1%;
+    }
+
+
+}
+
