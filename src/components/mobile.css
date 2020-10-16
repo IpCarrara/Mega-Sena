@@ -59,6 +59,7 @@
 
     .talao {
         height: 450px;
+        padding-bottom: 10px;
     }
 
     .containerTudo {
@@ -76,16 +77,19 @@
         margin: 10px;
         margin-right: 10px;
         padding: 10px;
+        height: 460px;
     }
 
     .resultadoBloco{
         position: absolute;
         margin: 10px;
         margin-right: 10px;
-        margin-top: 4%;
+        margin-left: 2%;
+        margin-top: 80px;
         text-align: center;
         width: 95%;
         padding: 10px;
+        height: 460px;
     }
 
     .talaoBloco{
@@ -95,7 +99,8 @@
         left: 50%;
         transform: translate(-50%);
         align-items: center;
-        
+        float: left !important;
+        top: 100px;
     }
 
     .observacao {
@@ -107,18 +112,6 @@
         top: 0;
         z-index: 1;
         margin-left: 4%;
-    }
-
-    .talaoBloco{
-        position: absolute;
-        float: left !important;
-        z-index: 1;
-        top: 70px;
-    }
-
-    .resultadoBloco{
-      margin-top: 80px;
-      margin-left: 2%;
     }
 
     .loadingLogo{
