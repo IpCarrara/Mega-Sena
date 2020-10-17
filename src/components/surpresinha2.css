@@ -11,6 +11,7 @@ body {
     margin-left: 16%;
     width: 870px;
     height: 475px;
+
 }
 
 .observacao {
@@ -19,10 +20,10 @@ body {
     text-align: center;
     height: 40px;
     position: absolute;
-    top:530px;
+    top:536px;
     z-index: 1;
-    margin-left: 4%;
-    
+    left: 50%;
+    transform: translate(-53%);
 }
 
 .aguardando{
@@ -62,10 +63,12 @@ body {
     margin-bottom: 20px;
     left: 15%;
     transform: translate(-15%);
+
+    background-size: 100%;
 }
 
 .talaoNum{
-    padding-top: 100px;
+   padding-top: 100px; 
 }
 
 .surpNumContainer{
@@ -80,6 +83,7 @@ body {
     width: auto;
     text-align: center;
     left: 7px;
+    max-width: 285px;
 }
 
 .botao{
@@ -102,8 +106,6 @@ body {
     -moz-box-shadow: 4px 4px 5px -2px rgba(0,0,0,0.75);
     box-shadow: 4px 4px 5px -2px rgba(0,0,0,0.75);
 
-
-
 }
 
 .botao:active{
@@ -124,7 +126,6 @@ body {
     position: relative;
     float: left !important;
     z-index: 1;
-   
 }
 
 
@@ -138,7 +139,7 @@ body {
     margin-right: 10px;
     background-color: rgb(255, 255, 240, 0.2);
     border-radius: 50px;
-    height: 420px;
+    height: 425px;
     width: 500px;
     padding: 10px;
 

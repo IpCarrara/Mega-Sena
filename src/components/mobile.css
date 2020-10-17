@@ -3,9 +3,9 @@
         margin-top: 5% !important;
         margin:0 auto;
         width: 870px;
-        height: 475px;
+        height: 500px;
     }
-    
+
 }
 @media (max-width: 1282px) {
     body { overflow-x: hidden }
@@ -13,9 +13,25 @@
         margin-top: 5% !important;;
         margin:0 auto;
         width: 870px;
-        height: 475px;
+        height: 500px;
     }
     
+    .resultadoBloco{
+        height: fit-content !important;
+    }
+
+    .talao{
+        width:300px;
+        height:initial;
+        
+    }
+
+    .observacao {
+        top:539px;
+        left: 50%;
+        transform: translate(-53%);
+    }
+
 }
 
 @media (max-width: 859px) {
@@ -39,14 +55,26 @@
     .resultadoBloco{
         position: relative;
         float: left !important;
-       
+        height: fit-content !important;
     }
 
     .talaoBloco{
         position: relative;
         float: left !important;
         z-index: 1;
+    }
+
+    .talao{
+        width:300px;
+        height:480px;
         
+    }
+
+    .observacao {
+        left: 50%;
+        top: 3%;
+        transform: translate(-50%, -3%);
+
     }
 
 }
@@ -55,11 +83,6 @@
     body { 
         overflow-x: hidden;
         background-image: url('./imagens/FundoMobile.jpg');
-    }
-
-    .talao {
-        height: 450px;
-        padding-bottom: 10px;
     }
 
     .containerTudo {
@@ -77,30 +100,28 @@
         margin: 10px;
         margin-right: 10px;
         padding: 10px;
-        height: 460px;
     }
 
     .resultadoBloco{
         position: absolute;
         margin: 10px;
         margin-right: 10px;
-        margin-left: 2%;
-        margin-top: 80px;
+        margin-top: 4%;
         text-align: center;
         width: 95%;
         padding: 10px;
-        height: 460px;
     }
 
     .talaoBloco{
         position: absolute;
+        float: left !important;
         z-index: 1;
         margin-top: 500px;
         left: 50%;
         transform: translate(-50%);
         align-items: center;
-        float: left !important;
-        top: 100px;
+        top: 70px;
+        
     }
 
     .observacao {
@@ -112,6 +133,17 @@
         top: 0;
         z-index: 1;
         margin-left: 4%;
+    }
+
+    .talao{
+        width:300px;
+        height:480px;
+        
+    }
+
+    .resultadoBloco{
+      margin-top: 80px;
+      margin-left: 2%;
     }
 
     .loadingLogo{
