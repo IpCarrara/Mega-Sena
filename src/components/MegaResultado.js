@@ -9,7 +9,7 @@ class MegaResultado extends Component {
         super(props)
         this.state = {
             resultados: {},
-            numeros: {},
+            dezenas: {},
             acumulou: "",
             valor:"",
             loading: true,
@@ -22,21 +22,21 @@ class MegaResultado extends Component {
 
     componentDidMount() {
         this.setState({loading: true})
-        fetch("https://apiloterias.com.br/app/resultado?loteria=megasena&token=${process.env.REACT_APP_LOTETIAS}")
+        fetch("https://loteriascaixa-api.herokuapp.com/api/mega-sena/latest")
         .then(response => response.json())
-        .then(data => {
+        .then(dados => {
             this.setState({
                 loading: false,
-                resultados: data,
-                numeros: data.dezenas,
-                acumulou: data.acumulou,
-                valor: data.valor_estimado_proximo_concurso,
+                resultados: dados,
+                dezenas: dados.dezenas,
+                acumulou: dados.acumulou,
+                valor: dados.valor_estimado_proximo_concurso,
                 visibilityDate: "visible",
                 visibilityDateSaiu: "visible",
                 visibilityDateProx: "visible",
                 aguardandoDados:  "hidden",
             })
-            console.log(data)
+            console.log(dados)
 
             if (this.state.loading === false ){
                 this.setState({
@@ -65,16 +65,16 @@ class MegaResultado extends Component {
                     <img className="loadingLogo" src={require(`./imagens/loading9.gif`)} width={664} height={300} mode='fit' alt="..."></img>
                 </div>
                 <div className="resultadoBloco" style={{ visibility: this.state.visibilityResp }}  >
-                        <div className="resultadoTitulo" style={{ visibility: this.state.visibilityDate }} >Resultado  <Moment className="resultadoData" format="DD/MM/YYYY">{this.state.resultados.data_concurso}</Moment></div>
-                        <div className="resultadoConcurso"><span>Concurso:</span> {this.state.resultados.numero_concurso}</div>
+                        <div className="resultadoTitulo" style={{ visibility: this.state.visibilityDate }} >Resultado  <div className="resultadoData" format="MM/DD/YYYY">{this.state.resultados.data}</div></div>
+                        <div className="resultadoConcurso"><span>Concurso:</span> {this.state.resultados.concurso}</div>
                         <div className="resultadoBolas">
                             <div>
-                                <span className="bolaGrande"><span className="bolaPequena">{this.state.numeros[0]}</span></span>
-                                <span className="bolaGrande"><span className="bolaPequena">{this.state.numeros[1]}</span></span>
-                                <span className="bolaGrande"><span className="bolaPequena">{this.state.numeros[2]}</span></span>
-                                <span className="bolaGrande"><span className="bolaPequena">{this.state.numeros[3]}</span></span>
-                                <span className="bolaGrande"><span className="bolaPequena">{this.state.numeros[4]}</span></span>
-                                <span className="bolaGrande"><span className="bolaPequena">{this.state.numeros[5]}</span></span> 
+                                <span className="bolaGrande"><span className="bolaPequena">{this.state.dezenas[0]}</span></span>
+                                <span className="bolaGrande"><span className="bolaPequena">{this.state.dezenas[1]}</span></span>
+                                <span className="bolaGrande"><span className="bolaPequena">{this.state.dezenas[2]}</span></span>
+                                <span className="bolaGrande"><span className="bolaPequena">{this.state.dezenas[3]}</span></span>
+                                <span className="bolaGrande"><span className="bolaPequena">{this.state.dezenas[4]}</span></span>
+                                <span className="bolaGrande"><span className="bolaPequena">{this.state.dezenas[5]}</span></span> 
                             </div>
                         </div>
                     <div className="textSaiu" style={{ visibility: this.state.visibilityDateSaiu }}>{saiu}</div>
@@ -84,16 +84,10 @@ class MegaResultado extends Component {
                     </div>
                     <div style={{ visibility: this.state.visibilityDateProx }}>
                         <div className="textoProxSort">Próximo Sorteio</div>
-                        <Moment className="dataProxSort" format="DD/MM/YYYY">{this.state.resultados.data_proximo_concurso}</Moment>
+                        <div className="dataProxSort" format="DD/MM/YYYY">{this.state.resultados.dataProxConcurso}</div>
                         <br></br>
                         <br></br>
-                        <NumberFormat className="valorProxSorteio"
-                            value={this.state.resultados.valor_estimado_proximo_concurso} 
-                            displayType={'text'} 
-                            thousandSeparator={true} 
-                            prefix={'R$'}
-                            suffix={',00'}
-                        />
+                        <div className="valorProxSorteio">{this.state.resultados.acumuladaProxConcurso}</div>
                     </div>
                 </div>
             </div>
